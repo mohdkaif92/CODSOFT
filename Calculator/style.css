@@ -1,0 +1,99 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#1e1e2f;
+}
+
+.calculator{
+  background:#2c2c3e;
+  padding:20px;
+  border-radius:12px;
+  width:320px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+#display{
+  width:100%;
+  height:60px;
+  margin-bottom:15px;
+  font-size:24px;
+  padding:10px;
+  text-align:right;
+  border:none;
+  border-radius:8px;
+  background: white;
+  color: black;
+}
+
+.buttons{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:10px;
+}
+
+button{
+  padding:18px;
+  font-size:20px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition: opacity 0.15s;
+}
+
+button:hover{
+  opacity:0.85;
+}
+
+/* Numbers */
+button:not(.operator):not(.equal):not(.clear):not(.delete){
+  background-color: white;
+  color: black;
+}
+
+/* Operators + − × ÷ % */
+.operator{
+  background-color: #4169E1;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Equal button */
+.equal{
+  background:#4caf50;
+  color:white;
+}
+
+/* C button */
+.clear{
+  background-color: #F08080;
+  color: white;
+}
+
+/* DEL button */
+.delete{
+  background-color: #FF4500;
+  color: white;
+}
+
+.zero{
+  grid-column: span 2;
+}
+
+@media (max-width:400px){
+  .calculator{
+    width:90%;
+  }
+}

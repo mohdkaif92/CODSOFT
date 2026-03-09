@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohd Kaif | Web Developer</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="logo">Mohd Kaif</div>
+  <div class="toggle" id="toggle">☰</div>
+  <div class="menu" id="menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm <span>Mohd Kaif</span></h1>
+    <h3>3rd Year B.Tech CSE Student & Aspiring Software Developer</h3>
+    <p>
+      Passionate about coding, problem-solving, and creating innovative
+      solutions through technology.
+    </p>
+    <a href="resume.pdf" class="btn primary" download>Download CV</a>
+    <a href="#contact" class="btn secondary">Contact Me</a>
+  </div>
+
+  <div class="img">
+    <img src="Image/my.jpeg" alt="Profile">
+  </div>
+</section>
+
+<section id="about">
+  <div class="card">
+    <h2>About Me</h2>
+    <p>
+      I am a 3rd Year B.Tech CSE student passionate about software development and technology.<br> 
+      I enjoy coding, problem-solving, and building responsive web applications.<br>
+      I continuously work on improving my skills in frontend and backend development 
+      to become a professional full-stack developer.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="card">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">MySQL</div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="card">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      
+      <div class="project">
+        <img src="Image/pixelbox.jpeg" alt="PixelBox">
+        <h3>PixelBox</h3>
+        <p>Browser based mini game collection built with HTML, CSS and JavaScript.</p>
+        
+      </div>
+
+      <div class="project">
+        <img src="Image/gameza.jpeg" alt="Gameza">
+        <h3>Gameza</h3>
+        <p>Modern gaming accessories e-commerce UI design built using HTML, CSS and JavaScript.</p>
+        
+      </div>
+
+      <div class="project">
+        <img src="Image/taskmaster.jpeg" alt="Task Manager">
+        <h3>Task Manager</h3>
+        <p>Simple task management web application with JavaScript and local storage.</p>
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="card">
+    <h2>Contact</h2>
+
+    <div class="contact-container">
+      <div class="contact-details">
+        <p><strong>Email:</strong><br> mokaifazam92@gmail.com</p>
+        <p><strong>Phone:</strong><br> +91 xxxxxxxx98</p>
+        <p><strong>Location:</strong><br> Madhya Pradesh, India</p>
+
+        <p style="margin-top:15px;">
+          <a href="https://www.linkedin.com/in/mohammad-kaif-1021153b0" target="_blank">LinkedIn</a> 
+          <a href="https://github.com/mohdkaif92" target="_blank">GitHub</a>
+        </p>
+      </div>
+
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> Mohd Kaif. All Rights Reserved.
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
